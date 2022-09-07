@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="icon" href="../p-gina-estilo-netflix-master/img/5.jpeg">
+	<script defer src="/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>SkateLife</title>
+</head>
+<body>
+
+    <header>
+		<div class="contenedor">
+			<h2 class="logotipo">SkateLife</h2>
+			<nav>
+				<a href="#" class="activo">Inicio</a>
+				<a href="#">Indumentaria</a>
+				<a href="#">Skateshop</a>
+				<a href="#">Skateparks</a>
+				<a href="#">Mis Compras</a>
+			</nav>
+		</div>
+	</header>
+
+    <main>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h2 class="titulo">Bienvenido a SkateLife</h2>
+				<script src="/js/main.js"></script>
+			</div>
+		</div>
+
+    <div id="root">
+        <form id="form">
+            <div class="form-brand">
+                <h2 class="form-label">SkateShop</h2>
+                <div class="brand-options">
+                    <label class="input-label">
+                        <input type="checkbox" value="wodoo" name="brand" class="input-checkbox"/> Wodoo
+                    </label>
+                    <label class="input-label">
+                        <input type="checkbox" value="element" name="brand" class="input-checkbox"/> Element
+                    </label>
+                    <label class="input-label">
+                        <input type="checkbox" value="nativos" name="brand" class="input-checkbox"/> Nativos
+                    </label>
+                    <label class="input-label">
+                        <input type="checkbox" value="santacruz" name="brand" class="input-checkbox"/> Santa Cruz
+                    </label>
+                    <label class="input-label">
+                        <input type="checkbox" value="birdhouse" name="brand" class="input-checkbox"/> Birdhouse
+                    </label>
+                </div>
+            </div>
+            <div class="form-filters">
+                <h2 class="form-label">Filtros</h2>
+                <select id="filters">
+                    <option value="Selecciona una opción" disabled selected>Filtrar por:</option>
+                    <option value="menor-mayor" name="filter">Menor a mayor precio</option>
+                    <option value="mayor-menor" name="filter">Mayor a menor precio</option>
+                    <option value="wata" name="filter">Watambu</option>
+                    <option value="maple" name="filter">Maple Canadiense</option>
+                </select>
+            </div>
+            <button type="submit" class="primary-button" id="submit-form">Buscar</button>
+        </form>
+        <div id="result">
+            <!-- render -->
+        </div>
+    </div>
+</body>
+</html>
