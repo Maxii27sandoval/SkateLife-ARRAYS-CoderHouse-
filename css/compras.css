@@ -1,0 +1,136 @@
+:root {
+	--rojo: #ece8e8;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 70%;
+	margin: auto;
+}
+
+header {
+	padding: 1px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 50px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Parte Frontal ----- ----- ----- */
+.pelicula-principal {
+	font-size: 11px;
+	min-height: 50.50em;
+	width: 1355px;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://kxwiz160pc.map.azionedge.net/Custom/Content/Themes/Element/Imagens/Historia/gallery7_3.jpg);
+	background-size: cover;
+	margin-bottom: .1em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 800;
+    font-family:'Open Sans', sans-serif;
+	font-size: 4.12em;
+	margin-bottom:1.5em;
+    text-align: center;
+}
+
+div .total{
+    font-weight: 800;
+    font-family:'Open Sans', sans-serif;
+	font-size: 2.12em;
+	margin-bottom:4.5em;
+    text-align: center;
+}
+
+
+
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 10%;
+	}
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #616161;
+    border-radius: .95rem;
+    border: .25rem solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #7a7c80;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}

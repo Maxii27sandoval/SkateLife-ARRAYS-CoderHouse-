@@ -1,0 +1,213 @@
+:root {
+	--rojo: #ece8e8;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 70%;
+	margin: auto;
+}
+
+header {
+	padding: 1px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 50px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Parte Frontal ----- ----- ----- */
+.pelicula-principal {
+	font-size: 9px;
+	min-height: 50.50em;
+	width: 1355px;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://kxwiz160pc.map.azionedge.net/Custom/Content/Themes/Element/Imagens/Historia/gallery7_3.jpg);
+	background-size: cover;
+	margin-bottom: .1em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 800;
+    font-family:'Open Sans', sans-serif;
+	font-size: 6.12em;
+	margin-bottom:1.5em;
+    text-align: center;
+}
+
+
+
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 10%;
+	}
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #616161;
+    border-radius: .95rem;
+    border: .25rem solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #7a7c80;
+}
+
+
+img{
+	height: 15rem;
+	margin: 6;
+
+}
+
+p{
+	color: #FFF;
+}
+
+h4{
+	color: #FFF;
+	height: 100px;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 1.5rem;
+	text-decoration:underline 1px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity:50%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: 20px;
+}
+
+.carousel__siguiente {
+	right: 20px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+	margin: auto;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: #fff;
+	opacity: .1;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+.total{
+	font-size: 25px;
+	margin: auto;
+}

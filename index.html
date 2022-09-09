@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="./script.js"></script>
-    <link rel="stylesheet" href="/style.css"/>
-    <link rel="icon" href="../p-gina-estilo-netflix-master/img/5.jpeg">
-	<script defer src="/script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	
+	<script src="/js/inicio.js"></script>
+    <link rel="icon" href="https://i.pinimg.com/564x/c2/a9/55/c2a955cb45c007a92c56fb967cf4a335.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>SkateLife</title>
 </head>
@@ -17,11 +21,9 @@
 		<div class="contenedor">
 			<h2 class="logotipo">SkateLife</h2>
 			<nav>
-				<a href="#" class="activo">Inicio</a>
-				<a href="#">Indumentaria</a>
-				<a href="#">Skateshop</a>
-				<a href="#">Skateparks</a>
-				<a href="#">Mis Compras</a>
+				<a href="index.html" class="activo">Inicio</a>
+				<a href="shop.html">Shop</a>
+				<a href="compras.html">Mis Compras</a>
 			</nav>
 		</div>
 	</header>
@@ -30,47 +32,69 @@
 		<div class="pelicula-principal">
 			<div class="contenedor">
 				<h2 class="titulo">Bienvenido a SkateLife</h2>
-				<script src="/js/main.js"></script>
+				<script src="/inicio.js"></script>
 			</div>
 		</div>
+	</main>
+			<div>
+				<h4>Nuestra Comunidad</h4>
+			</div>
 
-    <div id="root">
-        <form id="form">
-            <div class="form-brand">
-                <h2 class="form-label">SkateShop</h2>
-                <div class="brand-options">
-                    <label class="input-label">
-                        <input type="checkbox" value="wodoo" name="brand" class="input-checkbox"/> Wodoo
-                    </label>
-                    <label class="input-label">
-                        <input type="checkbox" value="element" name="brand" class="input-checkbox"/> Element
-                    </label>
-                    <label class="input-label">
-                        <input type="checkbox" value="nativos" name="brand" class="input-checkbox"/> Nativos
-                    </label>
-                    <label class="input-label">
-                        <input type="checkbox" value="santacruz" name="brand" class="input-checkbox"/> Santa Cruz
-                    </label>
-                    <label class="input-label">
-                        <input type="checkbox" value="birdhouse" name="brand" class="input-checkbox"/> Birdhouse
-                    </label>
-                </div>
-            </div>
-            <div class="form-filters">
-                <h2 class="form-label">Filtros</h2>
-                <select id="filters">
-                    <option value="Selecciona una opción" disabled selected>Filtrar por:</option>
-                    <option value="menor-mayor" name="filter">Menor a mayor precio</option>
-                    <option value="mayor-menor" name="filter">Mayor a menor precio</option>
-                    <option value="wata" name="filter">Watambu</option>
-                    <option value="maple" name="filter">Maple Canadiense</option>
-                </select>
-            </div>
-            <button type="submit" class="primary-button" id="submit-form">Buscar</button>
-        </form>
-        <div id="result">
-            <!-- render -->
-        </div>
-    </div>
+		<div class="carousel">
+			<div class="carousel__contenedor">
+				
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+				
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+						<img src="https://scontent.fmdz10-1.fna.fbcdn.net/v/t39.30808-6/295615841_5009614542483471_9072822879519510876_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=n7-OlBIJmFoAX-QWkJc&_nc_ht=scontent.fmdz10-1.fna&oh=00_AT8CI3-t2Uxb29fIfSFpMpQvfGY28Z-tWQAeeph_ckqAbg&oe=631F9BA9" alt="Rock and Roll Hall of Fame">
+						
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://scontent.fmdz10-1.fna.fbcdn.net/v/t39.30808-6/305401657_5131966486914942_1962241200739834896_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=KemUkNowAAcAX_TVDAb&tn=TYXTpkdMe8ttyS2c&_nc_ht=scontent.fmdz10-1.fna&oh=00_AT--TNf8d5E9HYRcoPpIZ1RuKB9QSExhb6oVkhQSL7SZEA&oe=63201880" alt="Constitution Square - Tower I">
+						
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://scontent.fmdz10-1.fna.fbcdn.net/v/t39.30808-6/305803121_5131966493581608_8363932061659052724_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a26aad&_nc_ohc=1-zuQGtdjocAX-6ged0&_nc_ht=scontent.fmdz10-1.fna&oh=00_AT_la1-6cmRdmE4zf1xO2w-gSzcAaMs6Kp6lMxslVARdJQ&oe=631F7325" alt="Empire State Building">
+						
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://scontent.fmdz10-1.fna.fbcdn.net/v/t1.6435-9/124620751_3471443199616986_1099433815007223690_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a26aad&_nc_ohc=Z3WgbWzu5sYAX-qiAAv&tn=TYXTpkdMe8ttyS2c&_nc_ht=scontent.fmdz10-1.fna&oh=00_AT_ZM-Qql4A824Mg3cKNKbyx1DtaDpMyMi_ZV9bOJHmPyw&oe=634142FF" alt="Harmony Tower">
+						
+					</div>
+	
+					<div class="carousel__elemento">
+						<img src="https://scontent.fmdz10-1.fna.fbcdn.net/v/t1.6435-9/125469198_3486809534747019_1500410396334618076_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=GFSyFJgicU8AX_0in5x&_nc_ht=scontent.fmdz10-1.fna&oh=00_AT8UWoBZ2SbxAfeSpo2qtmhhg_sx8UgDC43eAioPzbIGoA&oe=63402192" alt="Empire State Building">
+						
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://scontent.fmdz10-1.fna.fbcdn.net/v/t39.30808-6/256092723_4236510559793877_9214434030863254609_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=WwvVkxZx00sAX-aTG9o&_nc_oc=AQliDMTLZP-v669khYJ5yeSrW57Tf_dzABOY4J3KggzinY5ozw8fQjaXD7WlbDMRkYI&_nc_ht=scontent.fmdz10-1.fna&oh=00_AT9XWYG7LYoZeG1rV2xpYlP6ymeOraWcjKSzD_WDIN5dTg&oe=631F6EBA" alt="Harmony Tower">
+						
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://scontent.fmdz10-1.fna.fbcdn.net/v/t1.6435-9/125966910_3493372394090733_5389754605036930743_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a26aad&_nc_ohc=zoL81Qb0mooAX8Q88Dz&_nc_ht=scontent.fmdz10-1.fna&oh=00_AT86mGUOxxw7QsYdBuqffyNw5d6KRPsF4gKPj1CPKOhBpg&oe=633FE32E" alt="Empire State Building">
+						
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://scontent.fmdz10-1.fna.fbcdn.net/v/t39.30808-6/248025456_4236510546460545_568437114800484345_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=MOB41ICNHukAX-AjWhf&_nc_ht=scontent.fmdz10-1.fna&oh=00_AT8qOKTc6VVAtEuVp2tE6t58XL9WeRnFYmvDM2wng5FWHQ&oe=631FD696" alt="Harmony Tower">
+						
+					</div>
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+		<div role="tablist" class="carousel__indicadores"></div>
+		
+
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="js/app.js"></script>
+
 </body>
 </html>
