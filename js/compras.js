@@ -1,4 +1,4 @@
-let monto = parseFloat(prompt("Monto Total de su Compra"))
+let monto = parseFloat(prompt("monto Total de su Compra"))
 
 let cantidadCuotas = parseInt(prompt("Ingrese la cantidad de cuotas 1, 3, 6, 9, 12"))
 
@@ -27,3 +27,9 @@ const calculador = () => {
 }
 
 calculador()
+
+function saludar(nombre, apellido){
+    console.log ("Hola" + nombre + "" + apellido);
+    alert("Hola" + nombre + "" + apellido)
+}
+saludar("Coder","Tutor")

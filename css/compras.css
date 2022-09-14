@@ -134,3 +134,22 @@ div .total{
 		width: 100%;
 	}
 }
+
+h3{
+	font-size: 2rem;
+	color: #ece8e8;
+	margin-top: 50px;
+	margin-left: 50px;
+	text-decoration: underline;
+}
+
+button{
+	margin-left: 50px;
+	width: 25%;
+	display: block;
+	flex-wrap:wrap;
+    background: #a0f7f79d;
+    border: none;
+    padding: 12px 0;
+    font-family: 'Bebas Neue', cursive;
+}

@@ -49,14 +49,14 @@ header nav a.activo {
 
 /* ---- ----- ----- Parte Frontal ----- ----- ----- */
 .pelicula-principal {
-	font-size: 9px;
+	font-size: 10px;
 	min-height: 50.50em;
-	width: 1355px;
+	width: 1280px;
 	color: #fff;
 	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://kxwiz160pc.map.azionedge.net/Custom/Content/Themes/Element/Imagens/Historia/gallery7_3.jpg);
 	background-size: cover;
-	margin-bottom: .1em;
-	display: flex;
+	margin-bottom: .3em;
+	display:flex;
 	align-items: end;
 }
 
@@ -140,10 +140,10 @@ h4{
 
 .carousel__anterior,
 .carousel__siguiente {
-	position: absolute;
+	position:absolute;
 	display: block;
-	width: 50px;
-	height: 30px;
+	width: 30px;
+	height: 20px;
 	border: none;
 	top: calc(50% - 35px);
 	cursor: pointer;
@@ -160,15 +160,15 @@ h4{
 }
 
 .carousel__anterior {
-	left: 20px;
+	left: 30px;
 }
 
 .carousel__siguiente {
-	right: 20px;
+	right: 30px;
 }
 
 .carousel__lista {
-	overflow: hidden;
+	overflow:hidden;
 }
 
 .carousel__elemento {
@@ -207,7 +207,3 @@ h4{
 	}
 }
 
-.total{
-	font-size: 25px;
-	margin: auto;
-}

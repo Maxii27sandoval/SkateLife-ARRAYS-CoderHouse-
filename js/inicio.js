@@ -1,4 +1,5 @@
-let = confirm("SkateLife le da la Bienvenida 🛹 ");
+
+
 window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carousel__lista'), {
 		slidesToShow: 1,
